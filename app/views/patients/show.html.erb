@@ -3,4 +3,5 @@
 <ul>
   <% @patient.appointments.each do |app|
     <%= app.doctor.name %>, <%= app.appointment_datetime.strftime("%B %-d, %Y at %H:%M") %>
+    <%end%>
 </ul>
